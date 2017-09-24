@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Application</title>
+<body background="events/GreyBar.jpg" >
+<center><img src="membership.png" width="332" height="152" alt=""/></center>
+</body>
+
+
+
+<link href="mainstyle.css" rel="stylesheet" type="text/css">
+	<style>
+		ul{
+			list-syle-type:none;
+			margin:0;
+			padding:0;
+			overflow:hidden;
+			background-color:brown;
+		}
+		li{
+			float:left;
+		}
+		li a, .dropbtn{
+			display:inline-block;
+			color:white;
+			text-align:center;
+			padding:20px 16px;
+			text-decoration:none;
+		}
+		li a:hover, .dropdown:hover .droptn{
+			background-color:black;
+		}
+		li.dropdown{
+			display:inline-block;
+		}
+		.dropdown-content{
+			display:none;
+			position:absolute;
+			background-color:white;
+			min-width:160px;
+			box-shadow:0px 8px 16px rgba(0,0,0,0.2);
+			z-index:1;
+		}
+		.dropdown-content a{
+			color:brown;
+			padding:12px 16px;
+			text-decoration: none;
+			display:block;
+			text-align: left;
+		}
+		.dropdown-content a: hover{background-color:grey}
+		.dropdown:hover .dropdown-content{
+			display:block;
+		}	
+	</style>
+</head>
+	
+<body>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li class="dropdown">
+			<a href="events.html" class="dropbtn">Event</a>
+			</li>	
+		<li class="dropdown">
+			<a href="bulletin.html" class="dropbtn">Bulletin Board</a>
+			<div class="dropdown-content">
+				<a href="about ts.html">Volunteers</a>
+			</div>
+			</li>		
+		<li class="dropdown">
+			<a href="Musos.html" class="dropbtn">Artists</a>
+			</li>
+		<li class="dropdown">
+			<a href="membership.html" class="dropbtn">Members</a>
+			<div class="dropdown-content">
+				<a href="training.html">Application</a>
+			</div>
+			</li>
+		<li class="dropdown">
+			<a href="About us.html" class="dropbtn">About Us</a>
+			</li>
+
+	</ul>
+
+</body>
+
+<!--application form-->
+<body>
+<style>
+	.form{
+		width:600px;
+		height:1000;
+		border:5px solid brown;
+		
+	}
+	</style>
+<center><div class="form">
+<h1> Membership Application Form</h1>
+<form action="/action_page_binary.asp" method="post" entype="multipart/form-data">
+	First name:<input type="text" name="fname"><br>
+	<br>Surname:<input type="text" name="fname"><br>
+	<br>Postal Address:<input type="text"> <br>
+	<br>Phone Day:<input type="text"><br>
+	<br>Phone hours:<input type="text"><br>
+	<br>Mobile:<input type="text"><br>
+	<br>Email:<input type="text">
+	<br>(It is preferable to email all communication, newsletters etc.)<br><br>
+	comments:<br>
+	<textarea name="message" rows="5" cols="80"></textarea>
+	
+	
+	<br> I would like to make a tax deductible donation. I enclose a futhuer$<input type="text"><input type="checkbox">
+	<br>The Music Centre is also registered as a Deductible Gift Recipient. Any extra donations are tax-deductible!<br><br>
+	
+	<a href="https://www.paypal.com/webapps/mpp/home"><input type="submit"></a>
+</form></center>
+
+<p><strong>Tip:</strong>Please make cheques payable to Townsville Community Music Centre Inc, and post to PO BOx 1006, Townsville, Qld 4810
+<br><br>
+Or Desposit to accort:<br>
+<br>Account Name: Townsville Community Music Centre Inc.
+<br>Account Number: 141 475 053
+<br>Bank: Bendigo Bank
+<br>BSB Number: 633 000
+</p>
+</body>
+</html>
